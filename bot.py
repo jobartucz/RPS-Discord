@@ -45,7 +45,7 @@ async def on_ready():
 
 # First Slash Command
 @client.tree.command(name='ping', description='Simple ping command')
-async def roulette(interaction: discord.Interaction):
+async def ping(interaction: discord.Interaction):
     embed = discord.Embed(title='Pong!', color=0xFD7720)
     await interaction.response.send_message(embed=embed)
 
